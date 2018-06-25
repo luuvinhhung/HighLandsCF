@@ -1,6 +1,7 @@
 import { DepartmentsService } from './../shared/services/departments.service';
 import { Component, OnInit } from '@angular/core';
 import { IDepartment } from '../core/models/IDepartment';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-departments',

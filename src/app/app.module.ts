@@ -27,7 +27,7 @@ import { EmployeesComponent } from './employees/employees.component';
     FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SidebarModule.forRoot()
+    SidebarModule.forRoot(),
   ],
   providers: [DepartmentsService],
   bootstrap: [AppComponent]
