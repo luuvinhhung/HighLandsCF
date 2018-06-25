@@ -1,9 +1,10 @@
 <div>
   <img [routerLink]="['/home']" class="logo" src="assets/HighlandsCoffee_logo.jpg" alt="" />
   <button  *ngIf='!login' class="loginButton" [routerLink]="['/login']">
-    Đăng nhập
+    SIGN IN
   </button>
+  <span>HIGH LANDS COFFEE</span>
   <button *ngIf='login' class="loginButton">
-    Tài khoản
+    USER
   </button>
 </div>

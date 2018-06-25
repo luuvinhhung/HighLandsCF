@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,7 +11,7 @@ export class MainComponent implements OnInit {
   private _docked: Boolean = true;
   private _mode: String = 'slide';
   private _dockedSize: String = '60px';
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit() {
   }
@@ -18,5 +19,10 @@ export class MainComponent implements OnInit {
     this._opened = !this._opened;
     this._docked = !this._docked;
   }
-
+  depart() {
+    this.route.navigate(['/home/departments']);
+  }
+  employ() {
+    this.route.navigate(['/home/employees']);
+  }
 }

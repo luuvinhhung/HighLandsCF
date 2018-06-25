@@ -1,3 +1,4 @@
+import { EmployeesComponent } from './employees/employees.component';
 import { MainComponent } from './main/main.component';
 import { LoginComponent } from './login/login.component';
 import { DepartmentsComponent } from './departments/departments.component';
@@ -11,7 +12,13 @@ const routes: Routes = [
     }, {
         path: 'login', component: LoginComponent
     }, {
-        path: 'home', component: MainComponent
+        path: 'home', component: MainComponent, children: [
+            {
+                path: 'departments', component: DepartmentsComponent
+            }, {
+                path: 'employees', component: EmployeesComponent
+            }
+        ]
     }
 ];
 

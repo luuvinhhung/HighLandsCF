@@ -1,8 +1,4 @@
 $color-logo : #CF2212;
-.content {
-    padding-left: 50px;
-}
-
 ng-sidebar {
     font-size: 15px;
     text-align: center;
@@ -12,6 +8,7 @@ ng-sidebar {
         color: white;
         background-color: $color-logo;
         border: 0px;
+        cursor: pointer;
     }
     i {
         float: right;
@@ -22,4 +19,10 @@ ng-sidebar {
         padding-top: 20px;       
         cursor: pointer;
     }
+    p:hover {
+        color: $color-logo;
+    }
+}
+.content {
+    padding-left: 200px;
 }
