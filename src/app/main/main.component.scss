@@ -1,0 +1,25 @@
+$color-logo : #CF2212;
+.content {
+    padding-left: 50px;
+}
+
+ng-sidebar {
+    font-size: 15px;
+    text-align: center;
+    button {
+        height: 50px;
+        width: 200px;
+        color: white;
+        background-color: $color-logo;
+        border: 0px;
+    }
+    i {
+        float: right;
+        padding-right: 10px;
+    }
+    p {
+        height: 50px;
+        padding-top: 20px;       
+        cursor: pointer;
+    }
+}
